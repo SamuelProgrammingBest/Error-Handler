@@ -1,0 +1,28 @@
+{
+  "name": "make-errors-known",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Samuel Adewale",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev":"ts-node-esm src/index.ts",
+    "prepare":"npm run build"
+  },
+  "peerDependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "ts-node": "^10.9.2"
+  },
+  "keywords":[
+    "express",
+    "error-handling",
+    "typescript",
+    "middleware"
+  ]
+}
